@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Wear</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Lato?query=lato"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-primary-subtle fixed-top"
+      style="margin-bottom: 15px; position: sticky"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://png.pngtree.com/png-vector/20220625/ourmid/pngtree-leaf-green-leaves-logo-png-image_5415784.png"
+            alt="Loading"
+            width="40"
+            height="30"
+          />
+          Fresh Wear</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">All products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skin.html" target="_blank">Skin Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hair.html" target="_blank">Hair Care</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Lip Care</a></li>
+                <li><a class="dropdown-item" href="#">Beauty Care</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                  <a href="#" class="dropdown-item text-bg-secondary"
+                    >Book Now</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"></a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Combo</a></li>
+                <li><a class="dropdown-item" href="#">Bestsellers</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">New Arrivals</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="mx v -auto col-lg-7">
+            <form class="d-flex w-100">
+              <input
+                class="form-control me-4"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Cart </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Login </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide my-2 rounded-2"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img
+              src="https://dutchhealthstore.com/wp-content/uploads/2021/04/codex-header-dd.jpg"
+              class="d-block w-100 h-100"
+              alt="..."
+              class="img-fluid"
+              style="border-radius: 5px"
+            />
+           
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="MensSkincare_inner-banner (1).jpg"
+              class="d-block w-100"
+              alt="..."
+              class="img-fluid"
+              style="border-radius: 5px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="women (1).jpg"
+              class="d-block w-100"
+              alt="..."
+              class="img-fluid"
+              style="border-radius: 5px"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- carousel end -->
+
+    <div class="container-fluid text-center banner-text">
+      <p class="display-5 text-bg-dark content-title">TRENDING NOW</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-6">
+          <div class="card">
+            <a href="sugarcane.html">
+            <img
+              src="https://82e.com/cdn/shop/files/SugarcaneSoak.jpg?v=1686031463&width=650"
+              alt="Cream"
+              class="card-img-top rounded img-fit"
+            /> </a>
+            <div class="card-body">
+              <h5 class="card-title">Sugarcane Soak</h5>
+              <p class="card-text">
+                Mattifying cleanser with sugarcane and mandelic acid, source of
+                glycolic acid which helps to gently mattify the skin and boost
+                its natural, healthy glow
+              </p>
+              <!-- <div class="text-end"> -->
+              <a href="#" class="btn btn-outline-secondary">Learn More</a>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-6">
+          <div class="card">
+            <a href="Cucumber.html">
+            <img
+              src="https://82e.com/cdn/shop/files/cucumber-quench-mattifying-gel-moisturiser-card-1.jpg?v=1692605780&width=650"
+              alt="Cream"
+              class="card-img-top rounded img-fit"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Cucumber Quench</h5>
+              <p class="card-text">
+                Soothing moisturiser with cucumber and xylitol Soothing,source
+                of glycolic acid which helps to gently mattify the skin and
+                boost its natural, healthy glow.
+              </p>
+              <!-- <div class="text-end"> -->
+              <a href="#" class="btn btn-outline-secondary">Learn More</a>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-6">
+          <div class="card">
+            <a href="beam.html">
+            <img
+              src="https://82e.com/cdn/shop/files/LB-ProductCard1_3_1.jpg?v=1686031536&width=650"
+              alt="Cream"
+              class="card-img-top rounded img-fit"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Licorice Beam</h5>
+              <p class="card-text">
+                Clear sunscreen gel with licorice and ceramides, source of
+                glycolic acid which helps to gently mattify the skin and boost
+                its natural, healthy glow
+              </p>
+              <!-- <div class="text-end"> -->
+              <a href="#" class="btn btn-outline-secondary">Learn More</a>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center banner-text my-2">
+      <p class="display-5 text-bg-dark content-title fw-bold">ONLINE SERVICES</p>
+    </div>
+
+    <div
+      class="bg-image"
+      style="
+        background-image: url(https://www.bobbibrown.in/media/export/cms/schak/holiday%20favorites/1920%20x%20667%20cyber.jpg);
+        height: 50%;
+        width: 100%;
+      "
+    >
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-6">
+            <div class="card">
+              <img
+                src="https://www.bobbibrown.in/media/export/cms/schak/holiday%20favorites/os_img1_desk.jpg"
+                alt="Cream"
+                class="card-img-top rounded"
+              />
+              <div class="card-body">
+                <h5 class="card-title">VIRTUAL TRY-ON</h5>
+                <p class="card-text">
+                  Find your perfect shade with our Virtual Try-On Feature
+                </p>
+                <div class="text-start">
+                  <a href="#" class="btn btn-outline-secondary">TRY NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="card">
+              <img
+                src="https://media.istockphoto.com/id/1333978076/tr/foto%C4%9Fraf/man-relaxed-with-facial-treatment-at-beauty-center.jpg?s=170667a&w=0&k=20&c=VdoI_XClihX-afAyHe0MNAaSXHKEIJ66CHLh1EaZSqA="
+                alt="Cream"
+                class="card-img-top rounded img-fit"
+              />
+              <div class="card-body">
+                <h5 class="card-title">TUTORIALS</h5>
+                <p class="card-text">
+                  Learn how to get the most effortless looks
+                </p>
+                <div class="text-start">
+                  <a href="#" class="btn btn-outline-secondary">LEARN MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="card">
+              <img
+                src="https://www.bobbibrown.in/media/export/cms/schak/holiday%20favorites/os_img3_desk.jpg"
+                alt="Cream"
+                class="card-img-top rounded img-fit"
+              />
+              <div class="card-body">
+                <h5 class="card-title">TUTORIALS</h5>
+                <p class="card-text">
+                  Learn how to get the most effortless looks
+                </p>
+                <div class="text-start">
+                  <a href="#" class="btn btn-outline-secondary">LEARN MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-body-secondary">
+      <div class="about-1">
+        <div class="display-6 text-center fw-bold">
+          About Us
+        </div>
+        <p class="hell text-center">
+          Welcome to FreshWear, where style meets sustainability. At FreshWear,
+          we're more than just a fashion destination; we're a conscious
+          lifestyle brand committed to providing you with a curated collection
+          of trendy, eco-friendly apparel. Our mission is to redefine fashion by
+          blending cutting-edge design with a commitment to ethical and
+          sustainable practices. Explore our carefully selected range of
+          clothing that not only looks good but also makes a positive impact on
+          the planet. Join us on the journey towards a fresher, more sustainable
+          approach to fashion.
+        </p>
+      </div>
+      <div class="about-2">
+        <div class="content-box-lg">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="about-item text-center">
+                  <i class="bi bi-globe-central-south-asia"></i>
+                  <h3>MISSION</h3>
+                  <hr />
+                  <p class="hell">
+                    At FreshWear, our mission is to empower individuals to
+                    express their unique style while championing sustainability.
+                    We strive to create a positive impact by curating fashion
+                    that is not only on-trend but also environmentally
+                    conscious, fostering a community dedicated to making mindful
+                    choices.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="about-item text-center">
+                  <i class="bi bi-book-half"></i>
+                  <h3>VISION</h3>
+                  <hr />
+                  <p class="hell">
+                    Our vision at FreshWear is to lead the fashion industry
+                    towards a more sustainable future. We envision a world where
+                    style and ethics coexist seamlessly, inspiring a global
+                    shift towards responsible consumerism and a heightened
+                    awareness of the environmental footprint of fashion.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="about-item text-center">
+                  <i class="bi bi-pencil"></i>
+                  <h3>ACHEIVEMENTS</h3>
+                  <hr />
+                  <p class="hell">
+                    FreshWear takes pride in achieving milestones that
+                    contribute to our sustainability goals. From sourcing
+                    eco-friendly materials to reducing our carbon footprint, our
+                    achievements include partnerships with ethical. Together, we
+                    celebrate progress towards a greener, more stylish tomorrow.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class=" text-white pt-5 pb-4" style="background-color: rgb(77, 73, 73);">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+            <h5 class="text-uppercase mb-4 fw-bold text-dark">FreshWear</h5>
+            <p >
+              Step into style with FreshWear Footwear, where comfort meets trendsetting designs. Explore our curated collection of shoes crafted with precision and passion, ensuring every step is a statement. Walk confidently knowing that each pair is thoughtfully created with your style and comfort in mind. Elevate your footwear game with FreshWear – where every stride is a fashion-forward journey.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-dark">products</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >The Providers</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Creativity</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Source Files</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Bootstrap 5 Alpha</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-dark">
+              Useful Links
+            </h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Your Account</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Become an Affiliates</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Shipping Rates</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Help</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-dark">Contact</h5>
+            <p><i class="bi bi-house-fill mr-3"></i> Los Angels, Coimbatore</p>
+            <p><i class="bi bi-envelope mr-3"></i>          freshwear@gmail.com</p>
+            <p>
+              <i class="bi bi-telephone-plus-fill mr-3"></i> +91 877 851 7940
+            </p>
+            <p><i class="bi bi-printer mr-3"></i> +01 335 663 77</p>
+          </div>
+        </div>
+
+        <hr class="mb-4" />
+
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              Copyright &copy; All worldwide rights reserved by:
+              <a href="#" style="text-decoration: none">
+                <strong style="color: black;">FreshWear Professional Cosmetics</strong>
+              </a>
+            </p>
+          </div>
+
+          <div class="col-md-5 col-lg-4">
+            <div class="text-end text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-sm btn-sm text-white"
+                    style="font-size: 23px"
+                    > <i class="bi bi-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-sm btn-sm text-white"
+                    style="font-size: 23px"
+                    > <i class="bi bi-twitter"></i></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-sm btn-sm text-white"
+                    style="font-size: 23px"
+                    > <i class="bi bi-google"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-sm btn-sm text-white"
+                    style="font-size: 23px"
+                    > <i class="bi bi-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-sm btn-sm text-white"
+                    style="font-size: 23px"
+                    > <i class="bi bi-linkedin"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-sm btn-sm text-white"
+                    style="font-size: 23px"
+                    ><i class="bi bi-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!--     <img
+      src="https://naturalradiantlife.com/cdn/shop/products/TF-BrighteningDuo_T_2000x.png?v=1674756639.png"
+      alt="Face cream"
+      width="200"
+      class="rounded float-start"
+    />
+
+    <img
+      src="https://cdn11.bigcommerce.com/s-s8ill42t95/images/stencil/490x510/products/547/3991/Anti_Acne_Standalone__77431.1646940116.png?c=2.png"
+      alt="Face cream"
+      width="200"
+      class="rounded"
+    />
+
+    <img
+      src="https://images.lifestyleasia.com/wp-content/uploads/sites/5/2022/05/25175624/Kew-Organics-Skincare-Singapore-products-min-1024x933.png"
+      alt="Cream"
+      width="200"
+      class="rounded d-block py-3"
+    />
+
+    <img
+      src="https://www.bigbasket.com/media/uploads/p/xxl/40299418_1-himalaya-natural-glow-kesar-face-cream-reduces-pigmentation.jpg"
+      alt="Cream"
+      width="200"
+      class="rounded float-end"
+    />
+ -->

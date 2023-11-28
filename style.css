@@ -1,0 +1,140 @@
+.dropdown-divider {
+  padding-left: 5px;
+}
+.card.img-fit {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* @media (max-width: 767.98px) {
+  .card.img-fit {
+    aspect-ratio: 1.45/1;
+  }
+} */
+
+.content-title {
+  /* background-color: rgb(242, 221, 193);
+  border-radius: 2px; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: crimson;
+  /* text-align: left; */
+  /* text-transform: uppercase; */
+  animation: animate 1s ease-in-out infinite;
+}
+
+@keyframes animate {
+  from {
+    text-shadow: 0 0 20px red;
+  }
+  to {
+    text-shadow: 0 0 30px rgb(127, 191, 255), 0 0 10px blue;
+  }
+}
+
+.card {
+  height: 100%;
+}
+
+.card-text {
+  flex-grow: 1;
+}
+
+.card-body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.content-001 {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-text {
+  /* background-color: rgb(113, 231, 137); */
+  border-radius: 3px;
+}
+
+.centering {
+  justify-content: center;
+}
+
+.card {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  z-index: 1;
+  background-color: rgb(123, 250, 250);
+  color: rgb(109, 94, 94);
+}
+
+.about-1 {
+  margin: 30px;
+  padding: 5px;
+}
+
+.about-1.hell {
+  text-align: center;
+  padding: 3px;
+  column-rule: white;
+}
+
+.about-item {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: antiquewhite;
+  color: darkred;
+  padding: 80px, 30px;
+  box-shadow: 0 0 9px rgb(0, 0, 0, 0.6);
+}
+
+.about-item i {
+  font-size: 43px;
+  margin: 0;
+}
+
+.about-item h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.about-item hr {
+  width: 46px;
+  height: 3px;
+  background-color: darkblue;
+  margin: 0 auto;
+  border: none;
+}
+
+.about-item p {
+  margin-top: 20px;
+}
+
+.about-item:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+  color: darkgreen;
+}
+
+.about-item:hover hr {
+  background-color: black;
+}
+
+.about-item:hover i {
+  transform: translateY(-20px);
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr {
+  transition: all 400mx ease-in-out;
+}
